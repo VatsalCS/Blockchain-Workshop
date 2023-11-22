@@ -9,6 +9,8 @@ appointForm.addEventListener("submit", async (e) => {
     textarea: textarea.value,
   };
 
+
+  
   try {
     const getId = await blockchain_workshop_backend.addTodo(obj.textarea);
     showUserOnScreen({ id: getId, textarea: obj.textarea });
